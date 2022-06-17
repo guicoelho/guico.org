@@ -9,19 +9,13 @@ body {
     padding: 40px 60px;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 20px 15px;
-    }
-  }
-
-
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
     width: 100%;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -81,4 +75,30 @@ h1 {
     /* font-variation-settings: 'wght' 670.0; */
     background-color: #d5dfb3;
     padding: 2px 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    p, li {
+        font-size: 22px;
+    }
+
+    a, a:active, a:focus, a:visited {
+        height: 30px !important;
+    }
+    h1 {
+        font-size: 26px !important;
+    }
+    section {
+        margin-top: 60px;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px;
+    }    
 }
