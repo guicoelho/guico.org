@@ -78,6 +78,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+
     body {
         padding: 20px 15px;
     }
